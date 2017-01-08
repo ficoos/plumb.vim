@@ -10,7 +10,7 @@ Plumb.vim is a pattern based invocation plugin for Vim/Neovim.
 
 ```.viml
 "Pass word under cursor to the plumber
-nmap <leader>p "zyiW:call plumb#exec('<c-r>z') <CR>
+nmap <leader>p "zyy:call plumb#exec('<c-r>z') <CR>
 "Pass selected text to the plumber
 vmap <leader>p "zy:call plumb#exec(@z) <CR>
 ```
