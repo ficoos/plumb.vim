@@ -10,11 +10,12 @@ function! plumb#open_at(m)
   endif
 endfunction
 let g:plumb#conf = [
-  \ ['\<\(\f\+\): line \(\d\+\), col \(\d\+\)\>', 'plumb#open_at'],
-  \ ['\<\(\f\+\): line \(\d\+\)\>', 'plumb#open_at'],
-  \ ['\<\(\f\+\):\(\d\+\):\(\d\+\):\>', 'plumb#open_at'],
-  \ ['\<\(\f\+\):\(\d\+\)\>', 'plumb#open_at'],
-  \ ['\<\(\f\+\)\>', 'plumb#open_at']
+  \ ['File "\(\f\+\)", line \(\d\+\),', 'plumb#open_at'],
+  \ ['\(\f\+\): line \(\d\+\), col \(\d\+\)', 'plumb#open_at'],
+  \ ['\(\f\+\): line \(\d\+\)', 'plumb#open_at'],
+  \ ['\(\f\+\):\(\d\+\):\(\d\+\):', 'plumb#open_at'],
+  \ ['\(\f\+\):\(\d\+\)', 'plumb#open_at'],
+  \ ['\(\f\+\)', 'plumb#open_at']
   \ ]
 
 function! plumb#exec(data)
